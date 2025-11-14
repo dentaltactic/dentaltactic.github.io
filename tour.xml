@@ -1,0 +1,209 @@
+﻿<krpano version="1.22" title="стоматология Тактика">
+
+	<include url="skin/vtourskin.xml" />
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+	<skin_settings maps="false"
+	               maps_type="google"
+	               maps_bing_api_key=""
+	               maps_google_api_key=""
+	               maps_zoombuttons="false"
+	               maps_loadonfirstuse="true"
+	               gyro="true"
+	               gyro_keeplookingdirection="false"
+	               webvr="true"
+	               webvr_keeplookingdirection="true"
+	               webvr_prev_next_hotspots="true"
+	               autotour="true"
+	               littleplanetintro="false"
+	               followmousecontrol="false"
+	               title="true"
+	               thumbs="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_buttons="false"
+	               tooltips_thumbs="true"
+	               tooltips_hotspots="true"
+	               tooltips_mapspots="false"
+	               deeplinking="false"
+	               loadscene_flags="MERGE"
+	               loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+	               loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+	               loadingtext=""
+	               layout_width="100%"
+	               layout_maxwidth="814"
+	               controlbar_width="-24"
+	               controlbar_height="40"
+	               controlbar_offset="20"
+	               controlbar_offset_closed="-40"
+	               controlbar_overlap.no-fractionalscaling="10"
+	               controlbar_overlap.fractionalscaling="0"
+	               design_skin_images="vtourskin.png"
+	               design_bgcolor="0x2D3E50"
+	               design_bgalpha="0.8"
+	               design_bgborder="0"
+	               design_bgroundedge="1"
+	               design_bgshadow="0 4 10 0x000000 0.3"
+	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+	               design_thumbborder_padding="2"
+	               design_thumbborder_bgroundedge="0"
+	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_shadow="1"
+	               />
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	
+
+	
+	<scene name="scene_001" title="вход с улицы" onstart="" thumburl="panos/001.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="-142.863" vlookat="-1.563" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="120" fovmax="120" limitview="auto" />
+
+		<preview url="panos/001.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/001.tiles/pano_%s.jpg" />
+		</image>
+
+		<hotspot name="spot1853031665" style="skin_hotspotstyle" ath="-149.957" atv="-5.546" depth="1000.0" linkedscene="scene_002" linkedscene_lookat="-116.96,-1.19,120.0" linkedscene_spot="spot1853031877" linkedscene_hoffset="319.42" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_002" title="ресепшн" onstart="" thumburl="panos/002.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="-122.770" vlookat="-0.021" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="120" fovmax="120" limitview="auto" />
+
+		<preview url="panos/002.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/002.tiles/pano_%s.jpg" />
+		</image>
+
+		<hotspot name="spot1853031877" style="skin_hotspotstyle" ath="-10.538" atv="6.024" depth="1000.0" linkedscene="scene_001" linkedscene_lookat="-116.96,-1.19,120.0" linkedscene_spot="spot1853031665" linkedscene_hoffset="40.58" use3dtransition="true" />
+		<hotspot name="spot1853032070" style="skin_hotspotstyle" ath="-135.843" atv="-0.556" depth="1000.0" linkedscene="scene_004" linkedscene_lookat="-124.48,2.97,120.0" linkedscene_spot="spot1853032254" linkedscene_hoffset="478.27" use3dtransition="true" />
+		<hotspot name="spot1853032344" style="skin_hotspotstyle" ath="-117.856" atv="5.882" depth="1000.0" linkedscene="scene_005" linkedscene_lookat="-103.72,2.25,120.0" linkedscene_spot="spot1853032552" linkedscene_hoffset="456.71" use3dtransition="true" />
+		<hotspot name="spot1853032648" style="skin_hotspotstyle" ath="129.409" atv="-2.21" depth="1000.0" linkedscene="scene_003" linkedscene_lookat="-86.01,-0.18,120.0" linkedscene_spot="spot1853032771" linkedscene_hoffset="-6.17" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_003" title="лестница" onstart="" thumburl="panos/003.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="260.630" vlookat="0.807" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="120" fovmax="120" limitview="auto" />
+
+		<preview url="panos/003.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/003.tiles/pano_%s.jpg" />
+		</image>
+
+		<hotspot name="spot1853032771" style="skin_hotspotstyle" ath="-56.756" atv="30.911" depth="1000.0" linkedscene="scene_002" linkedscene_lookat="-86.01,-0.18,120.0" linkedscene_spot="spot1853032648" linkedscene_hoffset="366.17" use3dtransition="true" />
+		<hotspot name="spot1853032836" style="skin_hotspotstyle" ath="-122.606" atv="-2.105" depth="1000.0" linkedscene="scene_006" linkedscene_lookat="-143.31,-2.67,120.0" linkedscene_spot="spot1853033000" linkedscene_hoffset="282.05" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_004" title="кабинет 1" onstart="" thumburl="panos/004.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="-123.086" vlookat="-0.025" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="120" fovmax="120" limitview="auto" />
+
+		<preview url="panos/004.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/004.tiles/pano_%s.jpg" />
+		</image>
+
+		<hotspot name="spot1853032254" style="skin_hotspotstyle" ath="162.429" atv="-1.632" depth="1000.0" linkedscene="scene_002" linkedscene_lookat="-124.48,2.97,120.0" linkedscene_spot="spot1853032070" linkedscene_hoffset="-118.27" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_005" title="кабинет 2" onstart="" thumburl="panos/005.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="-113.496" vlookat="0.879" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="120" fovmax="120" limitview="auto" />
+
+		<preview url="panos/005.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/005.tiles/pano_%s.jpg" />
+		</image>
+
+		<hotspot name="spot1853032552" style="skin_hotspotstyle" ath="158.852" atv="5.239" depth="1000.0" linkedscene="scene_002" linkedscene_lookat="-103.72,2.25,120.0" linkedscene_spot="spot1853032344" linkedscene_hoffset="-96.71" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_006" title="холл 2 этаж" onstart="" thumburl="panos/006.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="-134.563" vlookat="-0.673" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="120" fovmax="120" limitview="auto" />
+
+		<preview url="panos/006.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/006.tiles/pano_%s.jpg" />
+		</image>
+
+		<hotspot name="spot1853033000" style="skin_hotspotstyle" ath="-20.557" atv="22.843" depth="1000.0" linkedscene="scene_003" linkedscene_lookat="-143.31,-2.67,120.0" linkedscene_spot="spot1853032836" linkedscene_hoffset="77.95" use3dtransition="true" />
+		<hotspot name="spot1853033054" style="skin_hotspotstyle" ath="-140.136" atv="0.871" depth="1000.0" linkedscene="scene_007" linkedscene_lookat="-166.23,-3.3,120.0" linkedscene_spot="spot1853033317" linkedscene_hoffset="427.04" use3dtransition="true" />
+		<hotspot name="spot1853033415" style="skin_hotspotstyle" ath="173.837" atv="7.597" depth="1000.0" linkedscene="scene_008" linkedscene_lookat="-128.67,-3.99,120.0" linkedscene_spot="spot1853033556" linkedscene_hoffset="68.77" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_007" title="кабинет 3" onstart="" thumburl="panos/007.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="-177.815" vlookat="1.734" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="120" fovmax="120" limitview="auto" />
+
+		<preview url="panos/007.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/007.tiles/pano_%s.jpg" />
+		</image>
+
+		<hotspot name="spot1853033317" style="skin_hotspotstyle" ath="106.9" atv="3.188" depth="1000.0" linkedscene="scene_006" linkedscene_lookat="-166.23,-3.3,120.0" linkedscene_spot="spot1853033054" linkedscene_hoffset="-67.04" use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_008" title="рентген" onstart="" thumburl="panos/008.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="-145.023" vlookat="2.286" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="120" fovmax="120" limitview="auto" />
+
+		<preview url="panos/008.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/008.tiles/pano_%s.jpg" />
+		</image>
+
+		<hotspot name="spot1853033556" style="skin_hotspotstyle" ath="62.606" atv="12.376" depth="1000.0" linkedscene="scene_006" linkedscene_lookat="-128.67,-3.99,120.0" linkedscene_spot="spot1853033415" linkedscene_hoffset="291.23" use3dtransition="true" />
+
+	</scene>
+
+
+</krpano>
